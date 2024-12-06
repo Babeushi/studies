@@ -1,15 +1,22 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    background-color: #f0e5e5; /* Fundo suave */
     color: #333;
     margin: 0;
     padding: 0;
+    background-image: url('imagens/background.jpg'); /* Adicione a imagem de fundo aqui */
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 header {
     background-color: #ffcccb;
     padding: 20px;
     text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 header h1 {
@@ -20,21 +27,57 @@ header h1 {
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ffc1cc;
 }
 
 section {
-    padding: 20px;
+    padding: 60px 20px;
     margin: 20px;
+}
+
+#about {
+    background-color: #ffe4e1;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#about h2 {
+    color: #333;
+}
+
+#about p {
+    color: #555;
+    line-height: 1.6;
+}
+
+#portfolio {
+    background-color: #ffb6c1;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#portfolio h2 {
+    color: #333;
 }
 
 .gallery {
@@ -49,6 +92,47 @@ section {
     height: auto;
     border: 2px solid #ffcccb;
     border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+#projects {
+    background-color: #ffd1dc;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#projects h2 {
+    color: #333;
+}
+
+#projects p, #projects ul {
+    color: #555;
+    line-height: 1.6;
+}
+
+#projects ul {
+    list-style: disc inside;
+}
+
+#contact {
+    background-color: #ffc1cc;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#contact h2 {
+    color: #333;
+}
+
+#contact p {
+    color: #555;
+    line-height: 1.6;
 }
 
 footer {
@@ -59,4 +143,5 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+    z-index: 1000;
 }

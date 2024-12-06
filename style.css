@@ -1,12 +1,18 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0e5e5; /* Fundo suave */
+    font-family: Arial, sans-serif; /* quero outra fonte, lembrar de importar*/
+    background-color: #f0e5e5; 
     color: #333;
     margin: 0;
     padding: 0;
-    background-image: url('imagens/background.jpg'); /* Adicione a imagem de fundo aqui */
+    background-image: url('imagens/background.jpg'); /* nao decidi a foto ainda */
     background-size: cover;
     background-attachment: fixed;
+    /*mudar cores tlavez essas 
+.color1 { #dbda97 };
+.color2 { #efae54 };
+.color3 { #ef6771 };
+.color4 { #4b1d37 };
+.color5 { #977e77 };*/
 }
 
 header {

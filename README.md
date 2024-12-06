@@ -1,7 +1,2 @@
 # studies
 Trying to learn something useful
-GIT OK
-GITDESKTOP OK
-VS OK
-PREPARAR PARA TESTES DO BOOTCAMP
-SQL PENDENTE

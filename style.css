@@ -95,7 +95,7 @@ section:hover {
     grid-column: span 3;
 }
 
-.foto, .concept {
+.foto {
     width: 100%;
     height: 150px;
     background-color: #C4C4C4;
@@ -104,8 +104,9 @@ section:hover {
 }
 
 .gallery {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
 }
 
 .additional-info {
@@ -135,7 +136,7 @@ footer {
 }
 
 button {
-    background-color: #FFCCCB;
+    background-color: #f3e09bc5;
     border: none;
     border-radius: 5px;
     padding: 10px;

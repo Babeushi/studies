@@ -1,18 +1,9 @@
 body {
-    font-family: Arial, sans-serif; /* quero outra fonte, lembrar de importar*/
-    background-color: #f0e5e5; 
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #f5f5f5, #ffcccb);
     color: #333;
     margin: 0;
     padding: 0;
-    background-image: url('imagens/background.jpg'); /* nao decidi a foto ainda */
-    background-size: cover;
-    background-attachment: fixed;
-    /*mudar cores tlavez essas 
-.color1 { #dbda97 };
-.color2 { #efae54 };
-.color3 { #ef6771 };
-.color4 { #4b1d37 };
-.color5 { #977e77 };*/
 }
 
 header {
@@ -51,16 +42,16 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #ffc1cc;
+    background-color: #ff91a4;
 }
 
 section {
-    padding: 60px 20px;
-    margin: 20px;
+    padding: 80px 20px;
+    margin: 60px 20px 20px;
 }
 
 #about {
-    background-color: #ffe4e1;
+    background-color: #ffb6c1;
     padding: 40px;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -70,13 +61,24 @@ section {
     color: #333;
 }
 
+.about-content {
+    display: flex;
+    gap: 20px;
+}
+
+.about-content img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
 #about p {
     color: #555;
     line-height: 1.6;
 }
 
 #portfolio {
-    background-color: #ffb6c1;
+    background-color: #ff91a4;
     padding: 40px;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -142,12 +144,12 @@ section {
 }
 
 footer {
-    background-color: #333;
-    color: #f5f5f5;
+    background-color: #ffcccb;
+    padding: 20px;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    z-index: 1000;
+}
+
+footer p {
+    margin: 0;
+    color: #333;
 }
